@@ -433,53 +433,440 @@ h3 {
     background-color: #ffffff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     
-    .main-header ul li a {
-        font-size: 20px;
-        margin-right: 15px;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
-    .hero-section h1 {
-        font-size: 50px;
-    }
+body {
+    background-color: #FFEED6;;
+}
 
-    .hero-section p {
-        font-size: 20px;
-    }
+/*-----------------------*/
+/* HEADER CSS */
+/*-----------------------*/
 
-    .hero-section img {
-        width: 90%;
-        height: auto;
-    }
+.circle-logo{
+    background: transparent;
+}
 
-    .blue-container {
-        flex-direction: column;
-        height: auto;
-    }
+.main-header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 9rem;
+    background-color: #505168;
+    border-radius: 0 0 40px 40px;
+    z-index: 1000;
+}
 
-    .my-journey-text p {
-        width: 90%;
-    }
+.main-header img {
+    padding-left: 2%;
+    padding-top: 1%;
+}
 
-    .head-shot {
-        width: 80%;
-        height: auto;
-        margin: 20px auto;
-    }
+.main-header ul {
+    background: transparent;
+    list-style: none;
+    margin-left: 2%;
+}
 
-    .bento-grid {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "modal"
-            "project-1-button"
-            "tame"
-            "project-2-button"
-            "hawaii"
-            "project-3-button";
-    }
+.main-header ul li {
+    display: inline-block;
+}
 
-    h3 {
-        font-size: 40px;
-    }
+.main-header ul li a {
+    color: white;
+    margin-right: 2rem;
+    font-size: 4vw;
+    text-decoration: none;
+}
+
+ul li a[aria-current="page"] {
+  color: #D96C06;
+  text-decoration: underline;
+}
+
+/*-----------------------*/
+/* HERO SECTION */
+/*-----------------------*/
+
+.hero-section {
+    text-align: center;
+}
+
+.hero-section h1{
+    color: #6C7D47;
+    font-size: 8vw;
+    margin-top: 9rem;
+}
+
+.hero-section p {
+    color: #D96C06;
+    font-size: 2.5vw;
+}
+
+.hero-section img {
+    margin-top: 1.25rem;
+    outline:.6rem solid #505168;
+    width:48% ;
+    height:50% ;
+    border-radius: 20px;
+}
+
+/*-----------------------*/
+/* ABOUT SECTION */
+/*-----------------------*/
+
+.green-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #6C7D47;
+    width: 50%;
+    height: 35rem;
+    margin-top: 17.5rem;
+    margin-left: 17.5rem;
+    border-radius: 40px;
+}
+
+.blue-container {
+    display: flex;
+    background-color: #ffffff;
+    margin-left: -29px;
+    width: 972px;
+    height: 500px;
+    border-radius: 5px 20px 20px 5px;
+}
+
+.my-journey-text h2 {
+    display: flex;
+    flex-direction: column;
+    color: #505168;
+    font-size: 70px;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.my-journey-text p {
+    font-size: 25px;
+    color: #505168;
+    margin-left: 20px;
+    width: 500px;
+}
+
+.head-shot {
+    display: grid;
+    margin-left: 70px;
+    margin-top: 50px;
+    border-radius: 20px;
+    outline: 10px dashed #D96C06;
+}
+
+#pastel-flower1 {
+    outline: none;
+    margin-left: 200px;
+    width: 200px;
+    height: 200px;
+}
+
+#pastel-flower2 {
+    outline: none;
+    margin-left: 50px;
+    margin-top: 150px;
+    width: 150px;
+    height: 150px;
+}
+
+#pastel-flower3 {
+    outline: none;
+    margin-left: -260px;
+    margin-top: 300px;
+    width: 100px;
+    height: 100px;
+}
+
+/*-----------------------*/
+/* MY PROJECTS SECTION*/
+/*-----------------------*/
+
+h3 {
+    margin-top: 200px;
+    font-size: 100px;
+    color: #505168;
+    text-align: center;
+}
+
+
+.grid-item {
+    background-color: #e49f38;
+    border-radius: 25px;
+}
+
+.grid-item-empty {
+    color: rgb(0, 0, 0);;
+    place-content: center;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgb(250, 199, 103);
+}
+
+.bento-grid {
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px 400px 400px;
+    gap: 4rem;
+    grid-template-areas: 
+    "project-1-button modal modal"
+    "tame tame project-2-button"
+    "project-3-button hawaii hawaii";
+}
+
+.bento-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+    border-radius: 25px;
+    outline: 4px solid #ffffff;
+}
+
+#project1-btn {
+    background-color: #D96C06;
+    box-shadow: 2px 2px 10px 2px #613003; 
+    border: none;
+    font-size: 50px;
+    font-weight: 1000;
+    color: white;
+    transition: transform 0.15s ease;
+}
+
+#project1-btn p{
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 20px;
+}
+
+#project1-btn h4 {
+    color: #505168;
+    line-height: 7;
+    font-size: 30px;
+}
+
+#project1-btn:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+#project2-btn {
+    background-color: #D96C06;
+    box-shadow: 2px 2px 10px 2px #613003; 
+    border: none;
+    font-size: 50px;
+    font-weight: 1000;
+    color: white;
+    transition: transform 0.15s ease;
+}
+
+#project2-btn p{
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 20px;
+}
+
+#project2-btn h4 {
+    color: #505168;
+    line-height: 7;
+    font-size: 30px;
+}
+
+#project2-btn:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+#project3-btn {
+    background-color: #D96C06;
+    box-shadow: 2px 2px 10px 2px #613003; 
+    border: none;
+    font-size: 50px;
+    font-weight: 1000;
+    color: white;
+    transition: transform 0.15s ease;
+}
+
+#project3-btn p{
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 20px;
+}
+
+#project3-btn h4 {
+    color: #505168;
+    line-height: 7;
+    font-size: 30px;
+}
+
+#project3-btn:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+/*-----------------------*/
+/* MODAL CSS */
+/*-----------------------*/
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    font-size: 28px;
+    color: #505168;
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal-description {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: white;
+    width: 700px;
+    height: 350px;
+    border-radius: 20px;
+    outline: 10px dashed #6C7D47;
+}
+
+.modal-description a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.close-button {
+    background-color: #D96C06;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.close-button:hover {
+    background-color: #ff9b3d;
+    cursor: pointer;
+}
+
+/*-----------------------*/
+/* FOOTER CSS */
+/*-----------------------*/
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #95818d;
+    border-radius: 40px 40px 0 0;
+}
+
+.main-footer-container h5 {
+    font-size: 50px;
+}
+
+#first-name-input {
+    background-color: #505168b4;
+    color: white;
+    outline: 2px solid #505168;
+    border: none;
+    border-radius: 2px;
+    width: 316px;
+    height: 30px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+#first-name-input::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#last-name-input {
+    background-color: #505168b4;
+    color: white;
+    outline: 2px solid #505168;
+    border: none;
+    border-radius: 2px;
+    width: 316px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#last-name-input::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#email-input {
+    background-color: #505168b4;
+    color: white;
+    outline: 2px solid #505168;
+    border: none;
+    border-radius: 2px;
+    width: 686px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#email-input::placeholder {
+    color: rgb(255, 255, 255);   
+    font-size: 20px;
+}
+
+#message-input {
+    background-color: #505168b4;
+    color: white;
+    outline: 2px solid #505168;
+    border: none;
+    border-radius: 2px;
+    width: 686px;
+    height: 150px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#message-input::placeholder {
+    color: rgb(255, 255, 255);   
+    font-size: 20px;
+}
+
+#contact-submit-button {
+    margin-top: 20px;
+    margin-left: 132px;
+    font-size: 40px;
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+    color: #505168;
+    border: none;
+    font-weight: 1000;
+    outline: 2px solid #505168;
+    background-color: #ffffff;
+}
 }
