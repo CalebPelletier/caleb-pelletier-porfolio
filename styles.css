@@ -28,14 +28,14 @@ body {
 }
 
 .main-header img {
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 2%;
+    padding-top: 1%;
 }
 
 .main-header ul {
     background: transparent;
     list-style: none;
-    margin-left: 40px;
+    margin-left: 2%;
 }
 
 .main-header ul li {
@@ -44,8 +44,8 @@ body {
 
 .main-header ul li a {
     color: white;
-    margin-right: 60px;
-    font-size: 70px;
+    margin-right: 2rem;
+    font-size: 4.5rem;
     text-decoration: none;
 }
 
@@ -64,20 +64,20 @@ ul li a[aria-current="page"] {
 
 .hero-section h1{
     color: #6C7D47;
-    font-size: 150px;
-    margin-top: 150px;
+    font-size: 9rem;
+    margin-top: 9rem;
 }
 
 .hero-section p {
     color: #D96C06;
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 .hero-section img {
-    margin-top: 20px;
-    outline:10px solid #505168;
-    width:900px ;
-    height:500px ;
+    margin-top: 1.25rem;
+    outline:.6rem solid #505168;
+    width:48% ;
+    height:50% ;
     border-radius: 20px;
 }
 
@@ -90,10 +90,10 @@ ul li a[aria-current="page"] {
     align-items: center;
     display: flex;
     background-color: #6C7D47;
-    width: 1000px;
-    height: 550px;
-    margin-top: 280px;
-    margin-left: 280px;
+    width: 52.5%;
+    height: 35rem;
+    margin-top: 17.5rem;
+    margin-left: 17.5rem;
     border-radius: 40px;
 }
 
