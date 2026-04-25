@@ -691,17 +691,6 @@ input, textarea {
 }
 
 /* MOBILE */
-@media (max-width: 600px) {
-    .main-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .main-header ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-top: 1rem;
-    }
-}
 
 }
