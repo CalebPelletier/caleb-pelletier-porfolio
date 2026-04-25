@@ -562,8 +562,8 @@ ul li a[aria-current="page"] {
     display: none;
 }
 
-
 /* PROJECTS */
+
 h3 {
     text-align: center;
     font-size: clamp(2rem, 6vw, 4rem);
@@ -662,12 +662,45 @@ button.grid-item h4 {
     border-radius: 20px 20px 0 0;
 }
 
-form {
-    width: 100%;
-    max-width: 600px;
+.main-footer-container h5 {
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-input, textarea {
+#first-name-input {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    outline: 2px solid #505168;
+    background-color: #505168b4;
+    color: white;
+}
+
+#last-name-input {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    outline: 2px solid #505168;
+    background-color: #505168b4;
+    color: white;
+}
+
+#email-input {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    outline: 2px solid #505168;
+    background-color: #505168b4;
+    color: white;
+}
+
+#message-input {
     width: 100%;
     margin-top: 1rem;
     padding: 0.5rem;
@@ -679,9 +712,8 @@ input, textarea {
 }
 
 #contact-submit-button {
-    margin-top: 1rem;
     width: 100%;
-    padding: 0.75rem;
+    margin-left: 0;
     font-size: 1.2rem;
     border-radius: 30px;
     border: none;
@@ -689,8 +721,5 @@ input, textarea {
     color: #505168;
     cursor: pointer;
 }
-
-/* MOBILE */
-
 
 }
