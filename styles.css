@@ -45,7 +45,7 @@ body {
 .main-header ul li a {
     color: white;
     margin-right: 2rem;
-    font-size: 4.5rem;
+    font-size: 4vw;
     text-decoration: none;
 }
 
@@ -64,13 +64,13 @@ ul li a[aria-current="page"] {
 
 .hero-section h1{
     color: #6C7D47;
-    font-size: 9rem;
+    font-size: 8vw;
     margin-top: 9rem;
 }
 
 .hero-section p {
     color: #D96C06;
-    font-size: 3rem;
+    font-size: 2.5vw;
 }
 
 .hero-section img {
