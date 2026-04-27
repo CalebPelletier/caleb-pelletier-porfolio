@@ -44,7 +44,7 @@ body {
 
 .main-header ul li a {
     color: white;
-    margin-right: 2rem;
+    margin-right: 1rem;
     font-size: 4vw;
     text-decoration: none;
 }
@@ -89,21 +89,18 @@ ul li a[aria-current="page"] {
     justify-content: center;
     align-items: center;
     display: flex;
-    background-color: #6C7D47;
-    width: 52.5%;
-    height: 35rem;
-    margin-top: 17.5rem;
-    margin-left: 17.5rem;
-    border-radius: 40px;
+    margin-top: 20rem;
 }
 
 .blue-container {
     display: flex;
     background-color: #ffffff;
-    margin-left: -29px;
-    width: 972px;
+    outline: 20px solid #6C7D47;
+    width: 100%;
+    max-width: 972px;
+    margin: 0 auto;
     height: 500px;
-    border-radius: 5px 20px 20px 5px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .my-journey-text h2 {
@@ -186,7 +183,7 @@ h3 {
     margin-top: 5rem;
     margin-bottom: 5rem;
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 400px 400px 400px;
     gap: 4rem;
     grid-template-areas: 
@@ -221,7 +218,6 @@ h3 {
 
 #project1-btn h4 {
     color: #505168;
-    line-height: 7;
     font-size: 30px;
 }
 
@@ -247,7 +243,6 @@ h3 {
 
 #project2-btn h4 {
     color: #505168;
-    line-height: 7;
     font-size: 30px;
 }
 
@@ -273,7 +268,6 @@ h3 {
 
 #project3-btn h4 {
     color: #505168;
-    line-height: 7;
     font-size: 30px;
 }
 
@@ -338,6 +332,74 @@ h3 {
 }
 
 /*-----------------------*/
+/* MY SKILLS */
+/*-----------------------*/
+
+.my-skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 12rem;
+}
+
+.my-skills h4 {
+    font-size: 8rem;
+    margin-top: 10rem;
+    color: #505168;
+}
+
+.my-skills li {
+    margin-top: 2rem;
+    font-size: 4rem;
+    color: #D96C06;
+    text-decoration: underline;
+}
+
+.my-skills p {
+    font-size: 2rem;
+    margin-left:15%;
+    width: 70%;
+}
+
+/*-----------------------*/
+/* HERO SECTION */
+/*-----------------------*/
+
+.Contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.Contact-info h4 {
+    font-size: 5rem;
+    color: #505168;
+}
+
+.Contact-info button {
+    border-radius: 20px;
+    height: 3rem;
+    width: 27%;
+    font-size: 1rem;
+    font-weight: 1000;
+    margin-left: 36%;
+    border: none;
+    color: white;
+    background-color: #6C7D47;
+    transition: opacity 0.3s ease;
+}
+
+.Contact-info button:hover {
+    cursor: pointer;
+    transform: translateY(.1rem);
+}
+
+
+
+/*-----------------------*/
 /* FOOTER CSS */
 /*-----------------------*/
 
@@ -345,7 +407,8 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     background-color: #95818d;
     border-radius: 40px 40px 0 0;
 }
@@ -433,6 +496,13 @@ h3 {
     font-weight: 1000;
     outline: 2px solid #505168;
     background-color: #ffffff;
+    transition: opacity 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+#contact-submit-button:hover {
+    cursor: pointer;
+    transform: translateY(.1rem);
 }
 
 @media (max-width: 767px) {
@@ -477,7 +547,7 @@ body {
 .main-header ul li a {
     color: white;
     text-decoration: none;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: 1rem;
 }
 
 ul li a[aria-current="page"] {
@@ -493,12 +563,12 @@ ul li a[aria-current="page"] {
 
 .hero-section h1 {
     color: #6C7D47;
-    font-size: clamp(2.5rem, 8vw, 6rem);
+    font-size: 2.5rem;
 }
 
 .hero-section p {
     color: #D96C06;
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: 1rem;
 }
 
 .hero-section img {
@@ -575,7 +645,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-    width: 90%;
+    width: 100%;
     margin: 2rem auto;
 }
 
@@ -639,6 +709,7 @@ button.grid-item h4 {
     padding: 1.5rem;
     border-radius: 20px;
     width: 90%;
+    height: 60%;
     max-width: 600px;
     text-align: center;
 }
@@ -724,4 +795,17 @@ button.grid-item h4 {
     cursor: pointer;
 }
 
+}
+
+@media (max-width: 1000px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: none;
+    gap: 2rem;
+  }
+
+  .grid-item {
+    height: auto;
+  }
 }
