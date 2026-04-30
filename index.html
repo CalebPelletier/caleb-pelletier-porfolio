@@ -41,27 +41,27 @@
     <h2 class="my-projects" id="projects-section">My Projects</h2>
     
     <div class="card-container">
-        <div class="card" data-index="0">
+        <div class="card" data-index="0" tabindex="0" aria-label="Open Modal for Modal Design project">
             <img src="images/modal-project-photo.png" alt="Modal project preview">
             <div class="card-description">
-                <p>Using JavaScript to create interactive modals.</p>
-                <h3>Click me to learn more!</h3>
+                <h3>Modal Project</h3>
+                <p>Click me to learn more!</p>
             </div>
         </div>
 
-        <div class="card" data-index="1">
+        <div class="card" data-index="1" tabindex="0" aria-label="Open Modal for Website Emulation project">
             <img src="images/tame-impala-project-image.png" alt="Website emulation project preview">
             <div class="card-description">
-                <P>Utilizing rudimentary HTML skills to emulate a world famous band's website.</P>
-                <h3>Click me to learn more!</h3>
+                <h3>Emulating a website</h3>
+                <p>Click me to learn more!</p>
             </div>
         </div>
 
-        <div class="card" data-index="2">
-            <img src="images/colab-project-image.png" alt="Modal project preview">
+        <div class="card" data-index="2" tabindex="0" aria-label="Open Modal for Python Coding Game project">
+            <img src="images/colab-project-image.png" alt="Python coding game preview">
             <div class="card-description">
-                <p>Using python to create a text-based story game in Google Colab.</p>
-                <h3>Click me to learn more!</h3>
+                <h3>Python Project</h3>
+                <p>Click me to learn more!</p>
             </div>
         </div>
     </div>
@@ -69,18 +69,24 @@
     <section class="my-skills">
         <h2>My Skills</h2>
         <ul>
-            <li>Proficient in Python</li>
+            <li>
+                <h3>Proficient in Python</h3>
                 <p>Over the course of my time at the University of Montana, I took a multitude of python related courses that developed my proficiency in the language.</p>
-            <li>Extensive Customer Service Experience</li>
+            </li>
+            <li>
+                <h3>Extensive Customer Service Experience</h3>
                 <p>For three years and counting I've worked as a produce clerk, sharpening and valuing exceptional customer service skills.</p>
-            <li>Ability to teach</li>
+            </li>
+            <li>
+                <h3>Ability to teach</h3>
                 <p>During my freshman year at the Universtiy of Montana I took a Learning Assistant course as well as being a designated LA for a college algebra course, both classes that gave me real world teaching experience.</p>
+            </li>
         </ul>
     </section>
 
     <section class="Contact-info" id="contact-info">
         <h2>Resume and Email</h2>
-        <a href="https://calebpelletier.github.io/Pelletier-csci181-practice/resume.html">Go to my Resume</a>
+        <a href="https://calebpelletier.github.io/Pelletier-csci181-practice/resume.html" aria-label="View Caleb Pelletier Resume">Go to my Resume</a>
         <p>Email : Caleb.pelletier05@yahoo.com</p>
     </section>
 
@@ -106,9 +112,9 @@
         </section>
     </footer>
 
-    <div class="modal-container">
+    <div class="modal-container" role="dialog">
         <div class="modal-description">
-            <button class="close-button">CLOSE</button>
+            <button class="close-button" aria-label="Close project details modal">CLOSE</button>
             <h4></h4>
             <p></p>
             <a></a>
