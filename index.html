@@ -4,66 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="modal.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/modal.js" defer></script>
 </head>
 <body>
-    <header class="main-header">
-        <img class="circle-logo" src="images/circle-orange.png" style="height: 100px; width: 100px;">
-        <img class="circle-logo" src="images/circle-orange.png" style="height: 50px; width: 50px;">
-        <img class="circle-logo" src="images/circle-orange.png" style="height: 30px; width: 30px;">
-        <ul>
-            <li><a aria-current="page" href="index.html">Home</a></li>
-            <li><a href="#Projects">About</a></li>
-            <li><a href="#contact" class="smooth-scroll">Projects</a></li>
-            <li><a href="#email">Contact</a></li>
-        </ul>
+    <header class="main-header">      
+        <nav>
+            <ul>
+                <li><a aria-current="page" href="index.html">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#projects-section" class="smooth-scroll">Projects</a></li>
+                <li><a href="#contact-info">Contact</a></li>
+            </ul>
+        </nav>
+
     </header>
+
+    <main>
 
     <section class="hero-section">
         <h1>Caleb Pelletier</h1>
         <p>Freshman at University of Montana</p>
-        <img src="images/university-of-montana-hero.jpg">
+        <img src="images/university-of-montana-hero.jpg" alt="image of the university of montana campus">
     </section>
 
-    <main>
-        <div class="green-container">
-            <div class="blue-container">
-                <div class="my-journey-text">
-                    <h2 >My Journey</h2>
-                        <p>Hello! My name is Caleb Pelletier, I’m a 21 year old freshman student at the university of montana currently majoring in mathematics with interests in astronomy and engineering. After my time at UM, I'm going to pursue the field of astrophysics with a specialty in extraterrestrial planets. I love all things related to design and technology, for example, I love burning and designing cds, creating custom video game textures, and even make short electronic songs!</p>
-                </div>
-                <img class="head-shot" src="images/head-shot.jfif">
+    <div class="green-container">
+        <div class="blue-container" id="about-section">
+            <div class="my-journey-text">
+                <h2 >My Journey</h2>
+                    <p>Hello! My name is Caleb Pelletier, I’m a 21 year old freshman student at the university of montana currently majoring in mathematics with interests in astronomy and engineering. After my time at UM, I'm going to pursue the field of astrophysics with a specialty in extraterrestrial planets. I love all things related to design and technology, for example, I love burning and designing cds, creating custom video game textures, and even make short electronic songs!</p>
+            </div>
+            <img class="head-shot" src="images/head-shot.jfif" alt="Image of my headshot">
+        </div>
+    </div>
+
+    <h2 class="my-projects" id="projects-section">My Projects</h2>
+    
+    <div class="card-container">
+        <div class="card" data-index="0">
+            <img src="images/modal-project-photo.png" alt="Modal project preview">
+            <div class="card-description">
+                <p>Using JavaScript to create interactive modals.</p>
+                <h3>Click me to learn more!</h3>
             </div>
         </div>
-    </main>
 
-    <h3>My Projects</h3>
-
-    <section class="bento-grid">
-            <div class="grid-item" style="grid-area: modal"><img class="bento-img" src="images/modal-project-photo.png" alt="Image of a project consisting of javascripted modals"></div>
-            <div class="grid-item" style="grid-area: hawaii"><img class="bento-img" src="images/colab-project-image.png" alt="Image of a emulated version of tameimpala.com"></div>
-            <div class="grid-item" style="grid-area: tame"><img class="bento-img" src="images/tame-impala-project-image.png" alt="Image of a sunset in montana"></div>
-            
-            <button data-index="1" id="project1-btn" class="grid-item" style="grid-area: project-1-button">Modal Design
-                <p>Using JavaScript to create interative modals that incorporates engaging elements within a webpage.</p>
-                <h4>Click me to learn more!</h4>
-            </button>
-
-            <button data-index="2" id="project2-btn" class="grid-item" style="grid-area: project-2-button">Emulatting a Website
+        <div class="card" data-index="1">
+            <img src="images/tame-impala-project-image.png" alt="Website emulation project preview">
+            <div class="card-description">
                 <P>Utilizing rudimentary HTML skills to emulate a world famous band's website.</P>
-                <h4>Click me to learn more!</h4>
-            </button>
+                <h3>Click me to learn more!</h3>
+            </div>
+        </div>
 
-            <button data-index="3" id="project3-btn" class="grid-item" style="grid-area: project-3-button">Python Browser Game
+        <div class="card" data-index="2">
+            <img src="images/colab-project-image.png" alt="Modal project preview">
+            <div class="card-description">
                 <p>Using python to create a text-based story game in Google Colab.</p>
-                <h4>Click me to learn more!</h4>
-            </button>
-            
-    </section>
+                <h3>Click me to learn more!</h3>
+            </div>
+        </div>
+    </div>
 
     <section class="my-skills">
-        <h4>My Skills</h4>
+        <h2>My Skills</h2>
         <ul>
             <li>Proficient in Python</li>
                 <p>Over the course of my time at the University of Montana, I took a multitude of python related courses that developed my proficiency in the language.</p>
@@ -74,14 +78,17 @@
         </ul>
     </section>
 
-    <section class="Contact-info">
-        <h4>Resume and Email</h4>
-        <button>Go to my Resume</button>
+    <section class="Contact-info" id="contact-info">
+        <h2>Resume and Email</h2>
+        <a href="https://calebpelletier.github.io/Pelletier-csci181-practice/resume.html">Go to my Resume</a>
+        <p>Email : Caleb.pelletier05@yahoo.com</p>
     </section>
+
+    </main>
 
     <footer class="main-footer-container">
         <section>
-            <h5 style="color: white;">Enter Contact Information</h5>
+            <h2 style="color: white;">Enter Contact Information</h2>
             <form>
                 <input type="text" id="first-name-input" name="name-input" placeholder="First name" required />
                 <input type="text" id="last-name-input" name="name-input" placeholder="Last name" required />

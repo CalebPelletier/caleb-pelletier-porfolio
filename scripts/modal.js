@@ -21,7 +21,7 @@ const modal_link = document.querySelector(".modal-description a");
 const close_button = document.querySelector(".close-button");
 
 // TODO 3: Select all project card buttons
-const card_buttons = document.querySelectorAll("#project1-btn, #project2-btn, #project3-btn");
+const card_buttons = document.querySelectorAll(".card");
 
 // TODO 4: Complete this function so it loads the correct project data and opens the modal
 function openModalByIndex(index) {
