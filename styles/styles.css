@@ -366,32 +366,26 @@ html {
     color: #505168;
 }
 
-.Contact-info a {
-    display: inline-block;
-    border-radius: 20px;
-    height: 3rem;
-    width: 27%;
-    font-size: 1.47rem;
-    line-height: .97;
-    text-decoration: none;
-    font-weight: 1000;
-    margin-left: 36%;
-    border: none;
-    color: white;
-    background-color: #6C7D47;
-    transition: opacity 0.3s ease;
+.contact-list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
-.Contact-info p {
+
+.Contact-info a {
+    height: 3rem;
     font-size: 2rem;
-    margin-top: 2rem;
-    color: #D96C06;
-    margin-bottom: -4rem;
     text-decoration: underline;
+    font-weight: 1000;
+    border: none;
+    color: #D96C06;
+    transition: opacity 0.3s ease;
 }
 
 .Contact-info a:hover {
     cursor: pointer;
     transform: translateY(.1rem);
+    color: #6C7D47;
 }
 
 /*-----------------------*/
@@ -636,33 +630,27 @@ body {
     color: #505168;
 }
 
-.Contact-info a {
-    display: inline-block;
-    border-radius: 20px;
-    height: 3rem;
-    width: 27%;
-    font-size: 1.2rem;
-    line-height: .97;
-    text-decoration: none;
-    font-weight: 1000;
-    margin-left: 36%;
-    border: none;
-    color: white;
-    background-color: #6C7D47;
-    transition: opacity 0.3s ease;
-}
-.Contact-info p {
-    font-size: 1rem;
-    margin-top: 1rem;
-    color: #D96C06;
-    margin-bottom: -4rem;
-    text-decoration: underline;
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
+.Contact-info a {
+    height: 3rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: 1000;
+    border: none;
+    color: #D96C06;
+    transition: opacity 0.3s ease;
+    margin-top: 1rem;
+}
 
 .Contact-info a:hover {
     cursor: pointer;
     transform: translateY(.1rem);
+    color: #6C7D47;
 }
 
 /* FOOTER */
