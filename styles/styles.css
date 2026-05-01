@@ -98,18 +98,40 @@ html {
 /*-----------------------*/
 
 .hero-section {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 .hero-section h1{
     color: #6C7D47;
     font-size: 8vw;
-    margin-top: 9rem;
+    margin-top: 6rem;
 }
 
 .hero-section p {
     color: #D96C06;
     font-size: 2.5vw;
+}
+
+.hero-section a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: #505168;
+    border-radius: 5px;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .2rem;
+}
+
+.hero-section a:hover {
+    background-color: rgba(45, 46, 59, 0.884);
+    cursor: pointer;
+    text-decoration: underline;
+    color: #D96C06;
 }
 
 .hero-section img {
