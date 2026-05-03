@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #505168;
+}
+
+html {
+    font-size: 16px
+}
+
+body {
+    background-color: #FFEED6;;
+}
+
+button:hover {
+  background-color: #ff9b3d;
+}
+
+button:focus {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+
+a:focus {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+
+input:focus {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+
+#about-section {
+  scroll-margin-top: 12rem;
+}
+
+#projects-section {
+  scroll-margin-top: 12rem;
+}
+
+#contact-info {
+  scroll-margin-top: 12rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*-----------------------*/
+/* HEADER CSS */
+/*-----------------------*/
+
+.main-header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100vw;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #505168;
+    border-radius: 0 0 40px 40px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.main-header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.main-header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(0.9rem, 2.5vw, 5rem);
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+.main-header ul li a:hover {
+    color: #D96C06;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.main-header ul li a[aria-current="page"] {
+    color: #D96C06;
+    text-decoration: underline;
+}
+
+/*-----------------------*/
+/* MAIN CONTENT */
+/*-----------------------*/
+
+#main-content-resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+#resume {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+/*-----------------------*/
+/* EDUCATION */
+/*-----------------------*/
+
+.education {
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+.education h2 {
+    color: #D96C06;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.education strong {
+    font-size: 1.5rem;
+}
+
+.education p {
+    font-size: 1.5rem;
+}
+/*--------------------------*/
+/* PROFFESSIONAL EXPERIENCE */
+/*--------------------------*/
+
+.prof-experience {
+    margin-bottom: 1rem;
+}
+
+.prof-experience h2 {
+    color: #D96C06;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.prof-experience strong {
+    font-size: 1.5rem;
+}
+
+.prof-experience p {
+    font-size: 1.5rem;
+}
+
+.prof-experience li {
+    font-size: 1.2rem;
+    margin-top: .5rem;
+    list-style-position: inside;
+}
+
+/*-----------------------*/
+/* RESUME SKILS */
+/*-----------------------*/
+
+.resume-skills {
+    margin-bottom: 1rem;
+}
+
+.resume-skills h2 {
+    color: #D96C06;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.resume-skills strong {
+    font-size: 1.5rem;
+}
+
+.resume-skills p {
+    font-size: 1.5rem;
+}
+
+.resume-skills li {
+    list-style-position: inside;
+    font-size: 1.2rem;
+    margin-top: .5rem;
+}
+
+/*-----------------------*/
+/* TABLE DESCRIPTIONS */
+/*-----------------------*/
+
+.course-list {
+    margin-bottom: 4rem;
+    width: 50%;
+}
+
+.course-list h2 {
+    color: #D96C06;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.course-list li {
+    list-style: none;
+    margin-bottom: 2rem;
+}
